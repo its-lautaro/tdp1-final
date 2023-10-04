@@ -87,15 +87,20 @@ Bucle del programa
 		
 		
     Si el estado primario es 'SELECCIONAR_MODO'
-    	Si el estado secundario es 'RIEGO_INTELIGENTE_OFF'
-		Avanzo al estado secundario 'RIEGO_INTELIGENTE_ON'
-    	Sino
-    	 	Avanzo al estado secundario 'RIEGO_INTELIGENTE_OFF'
+    
+	Si se presionó el botón 'UP' o 'DOWN'
+		Si el estado secundario es 'CAMBIAR_RIEGO_INTELIGENTE_OFF'
+			Avanzo al estado secundario 'RIEGO_INTELIGENTE_ON'
+    		Sino
+    	 		Avanzo al estado secundario 'RIEGO_INTELIGENTE_OFF'	
+    		
+    	Si presioné el botón 'ENTER'
+    		Se cambia el modo inteligente dependiendo del estado secundario actual
+    				    
+  	Si se presionó el botón 'CANCELAR'
+  		Avanzo al estado primario 'MENU'
     	
     	
-       Escribir en el lcd leyenda correspondiente según estado actual
-       Delay(2000);
-       Avanzo al estado primario 'MENU'
     	
     
 
