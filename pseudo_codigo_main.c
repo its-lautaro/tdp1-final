@@ -1,29 +1,20 @@
-//To-do
- // Modularizar
- // Reutilizar logíca de cambiar hora los modos "MODIFICAR_FECHA_HORA_ACTUAL" y "MODIFICAR_FECHA_HORA_PROGRAMA_RIEGO"
- //definir 
-estado_primario = STAND_BY;
-boton_presionado ;
-while (1) {
-    // Verificar si es hora de regar y cambiar al estado de REGAR si es necesario
-    si (estado_primario == STAND_BY && estoyEnHoraDeRegar()) {
-        estate_primario = REGAR;
-	estate_secundario= PREPARADO;
-    }
+
+Se avanza al estado primario STAND_BY
+Bucle del programa
+
+    Si el estado primario es STAND_BY y es la hora de regar
+	Avanzo al estado primario 'REGAR'
+	Avanzo al estado secundario 'PREPARADO'
+
+    Se lee el botón presionado
     
-    // Leer el último botón presionado
-    boton_presionado = BotonPresionado(); //si no se presionó un botón devuelve null o algun valor caracteristico
+    Si el estado primario es STAND_BY y se preionó algún botón
+    	Avanzo al estado primario 'MENU'
     
     
-    si(estado_primario == SLEEP && boton_presionado != null){
-    	estado_primario = MENU;
-    }
+    Si no se presionó ningún botón en 30 seg
+    	Avanzo al estado primario 'STAND_BY'
     
-    si no presioné ningun boton en 30 seg
-    	estado_primario = SLEEP
-    
-    
-    // MENU PRINCIPAL----------------------------------------------------------------------------------------------
     Si el estado primario es 'MENU' 
             Si presioné el botón UP
             	    Avanzar estado secundario correspondiente
@@ -63,11 +54,7 @@ while (1) {
 	
 	Escribir en el lcd leyenda correspondiente según estado actual
 	    
-    
 
-
-    // MODIFICAR FECHA Y HORA DEL PROGRAMA DE RIEGO----------------------------------------------------------------------------------------------
-     // le falta segmentar por horas y minutos. Simplificamos el pseudo código para que se entienda mejor
     Si el estado primario es 'MODIFICAR_FECHA_HORA_PROGRAMA_RIEGO'
 			Si el estado secundario es 'MODIFICANDO_FECHA'
 				Si presioné el botón 'UP'
@@ -97,12 +84,6 @@ while (1) {
 		Escribir en el lcd leyenda correspondiente según estado actual
 		
 		
-    
-    
-    
-
-
-    //CAMBIAR MODO INTELIGENT
     Si el estado primario es 'SELECCIONAR_MODO'
     	Si el estado secundario es 'RIEGO_INTELIGENTE_OFF'
 		Avanzo al estado secundario 'RIEGO_INTELIGENTE_OFF'
