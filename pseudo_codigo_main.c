@@ -6,18 +6,18 @@ estado_primario = STAND_BY;
 int boton_presionado();//Retorna el último botón presionado
 while(1){
     // Verificar si es hora de regar y cambiar al estado de REGAR si es necesario
-    if(estado_primario == SLEEP && estoyEnHoraDeRegar()){
+    if(estado_primario == STAND_BY && estoyEnHoraDeRegar()){
         estate_primario = REGAR;
 		estate_secundario= PREPARADO;
     }
     // Leer el último botón presionado
     boton_presionado = BotonPresionado(); //si no se presionó un botón devuelve null o algun valor caracteristico
     
-    if(estado_primario == SLEEP && boton_presionado != null){
+    if(estado_primario == STAND_BY && boton_presionado != null){
     	estado_primario = MENU;
     }
     if(no presioné ningun boton en 30 seg){
-    	estado_primario = SLEEP;
+    	estado_primario = STAND_BY;
     }
 
     // MENU PRINCIPAL----------------------------------------------------------------------------------------------
