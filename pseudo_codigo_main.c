@@ -2,7 +2,9 @@
 Se avanza al estado primario STAND_BY
 Bucle del programa
 
-    Si el estado primario es STAND_BY y es la hora de regar
+	Escribir en el lcd leyenda correspondiente según estado actual
+
+	Si el estado primario es STAND_BY y es la hora de regar
 	Avanzo al estado primario 'REGAR'
 	Avanzo al estado secundario 'PREPARADO'
 
@@ -86,9 +88,9 @@ Bucle del programa
 		
     Si el estado primario es 'SELECCIONAR_MODO'
     	Si el estado secundario es 'RIEGO_INTELIGENTE_OFF'
-		Avanzo al estado secundario 'RIEGO_INTELIGENTE_OFF'
+		Avanzo al estado secundario 'RIEGO_INTELIGENTE_ON'
     	Sino
-    	 	Avanzo al estado secundario 'RIEGO_INTELIGENTE_ON'
+    	 	Avanzo al estado secundario 'RIEGO_INTELIGENTE_OFF'
     	
     	
        Escribir en el lcd leyenda correspondiente según estado actual
@@ -126,4 +128,4 @@ Bucle del programa
             Avanzo al estado primario 'MENU'
         
         
-         Escribir en el lcd leyenda correspondiente según estado actual
+         
