@@ -6,7 +6,7 @@ estado_primario = STAND_BY;
 boton_presionado ;
 while (1) {
     // Verificar si es hora de regar y cambiar al estado de REGAR si es necesario
-    //esto debería de ir ultimo? 
+
     if (estado_primario == SLEEP && estoyEnHoraDeRegar()) {
         estate_primario = REGAR;
 	estate_secundario= PREPARADO;
