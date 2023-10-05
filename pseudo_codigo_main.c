@@ -14,10 +14,10 @@ Bucle del programa
 
 	Si el estado primario es 'MENU' 
 		Se presionó el botón UP
-	    	    Avanzar estado secundario correspondiente
+	    		Avanzar estado secundario correspondiente
 		    
 		Se presionó el boton Enter
-		    Avanzar estado primario correspondiente
+			Avanzar estado primario correspondiente
 
 
 	Si el estado primario es 'MODIFICAR_FECHA_HORA_ACTUAL'
@@ -35,7 +35,7 @@ Bucle del programa
 		        
 		Si el estado secundario es 'MODIFICANDO_HORA'
 			Se presionó el botón 'UP'
-			      Incrementar la hora
+				Incrementar la hora
 			Sino   
 				Se presionó el botón 'DOWN'
 			      		Decrementar la hora
