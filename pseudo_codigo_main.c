@@ -14,9 +14,9 @@ Bucle principal del programa
 
 	Si el estado primario es 'MENU' 
 		Se presionó el botón UP
-	    		Avanzar estado secundario correspondiente    
+	    		Se avanza el estado secundario correspondiente    
 		Se presionó el boton Enter
-			Avanzar estado primario correspondiente
+			Se avanza el estado primario correspondiente
 
 	Si el estado primario es 'MODIFICAR_FECHA_HORA_ACTUAL'
 		Si el estado secundario es 'MODIFICANDO_FECHA'
@@ -41,16 +41,11 @@ Bucle principal del programa
 		       	    
 	Si el estado primario es 'MODIFICAR_FECHA_HORA_PROGRAMA_RIEGO'
 		Si el estado secundario es 'MODIFICANDO_FECHA'
-			Se presionó 'UP'
-				Incrementar día de la semana (lunes,martes,etc)
-			Sino
-				Se presionó el botón 'DOWN'
-			      		Decrementar  día de la semana (lunes,martes,etc)
-			      	Sino
-			      		Se presionó el botón 'ENTER'
-			   			estado_secundario = MODIFICAR_HORA
+			Dependiendo de los botones presionados se van seleccionando los días de riego
+			Si presionó el botón 'ENTER'
+				Se avanza el estado secundario 'MODIFICANDO_HORA'
 				     
-		Si el estado secundario es 'MODIFICANDO_HORA)'
+		Si el estado secundario es 'MODIFICANDO_HORA'
 				Se presionó el botón 'UP'
 					Incrementar la hora
 				Sino
