@@ -1,26 +1,3 @@
-<<<<<<< HEAD
-//To-do
- // Modularizar
- // Reutilizar logíca de cambiar hora los modos "MODIFICAR_FECHA_HORA_ACTUAL" y "MODIFICAR_FECHA_HORA_PROGRAMA_RIEGO"
- //definir 
-estado_primario = STAND_BY;
-int boton_presionado();//Retorna el último botón presionado
-while(1){
-    // Verificar si es hora de regar y cambiar al estado de REGAR si es necesario
-    if(estado_primario == STAND_BY && estoyEnHoraDeRegar()){
-        estate_primario = REGAR;
-		estate_secundario= PREPARADO;
-    }
-    // Leer el último botón presionado
-    boton_presionado = BotonPresionado(); //si no se presionó un botón devuelve null o algun valor caracteristico
-    
-    if(estado_primario == STAND_BY && boton_presionado != null){
-    	estado_primario = MENU;
-    }
-    if(no presioné ningun boton en 30 seg){
-    	estado_primario = STAND_BY;
-    }
-=======
 Se avanza al estado primario STAND_BY
 
 Bucle principal del programa
@@ -31,7 +8,6 @@ Bucle principal del programa
     
 	Si el estado primario es STAND_BY y se presionó algún botón
 		Se avanza al estado primario 'MENU'
->>>>>>> 2b38a6ec2614af270d2108f3facfea2e9de29d8c
 
 	Si no se presionó ningún botón en 30 seg
 		Se avanza al estado primario 'STAND_BY'
