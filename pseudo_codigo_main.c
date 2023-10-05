@@ -42,7 +42,7 @@ Bucle principal del programa
 	Si el estado primario es 'MODIFICAR_FECHA_HORA_PROGRAMA_RIEGO'
 		Si el estado secundario es 'MODIFICANDO_FECHA'
 			Dependiendo de los botones presionados se van seleccionando los días de riego
-			Si presionó el botón 'ENTER'
+			Si se finalizó de seleccionar los días de riego
 				Se avanza el estado secundario 'MODIFICANDO_HORA'
 				     
 		Si el estado secundario es 'MODIFICANDO_HORA'
