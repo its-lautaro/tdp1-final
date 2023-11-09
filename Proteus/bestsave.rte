@@ -80,113 +80,120 @@
    (Net +5V 
    (rule
    )
-   (wire (path BOT 76200  -746000 -6550000 -746000 -2032000 2413000 -2032000
-     2413000 3460681 0 3460681 0 4500000)
-    (connect (terminal pin J3-1) (terminal pin J4-1))
+   (wire (path BOT 76200  -3466000 -1434000 -3466000 -2982286 -4064000 -2982286
+     -4064000 -6667500 3873500 -6667500 3873500 -5496000 2300000 -5496000)
+    (connect (terminal pin J7-0) (terminal pin J3-1))
    )
-   (wire (path BOT 76200  -381000 889000 -4000000 889000 -4000000 504000)
-    (connect (terminal wire) (terminal pin J2-0))
+   (wire (path BOT 76200  -4000000 504000 -4000000 889000 0 889000)
+    (connect (terminal pin J2-0) (terminal wire))
    )
-   (wire (path BOT 76200  -381000 889000 -381000 4699000 0 4699000
-     0 4500000)
-    (connect (terminal wire) (terminal pin J4-1))
+   (wire (path BOT 76200  -3466000 -1434000 -3466000 -825500 -4000000 -825500
+     -4000000 504000)
+    (connect (terminal pin J7-0) (terminal pin J2-0))
    )
-   (wire (path BOT 76200  -4000000 504000 -4000000 -889000 -3466000 -889000
-     -3466000 -1434000)
-    (connect (terminal pin J2-0) (terminal pin J7-0))
+   (wire (path BOT 76200  -4000 250000 -4000 -127000 1500000 -127000
+     1500000 500000)
+    (connect (terminal pin J1-2) (terminal pin J5-0))
    )
-   (wire (path BOT 76200  1500000 500000 1500000 63500 -4000 63500
+   (wire (path BOT 76200  0 889000 0 825500 -4000 825500
      -4000 250000)
-    (connect (terminal pin J5-0) (terminal pin J1-2))
+    (connect (terminal wire) (terminal pin J1-2))
    )
-   (wire (path BOT 76200  -4000 250000 -4000 889000 -381000 889000)
-    (connect (terminal pin J1-2) (terminal wire))
+   (wire (path BOT 76200  0 4500000 0 889000)
+    (connect (terminal pin J4-1) (terminal wire))
    )
    )
    (Net CH1 
    (rule
    )
-   (wire (path BOT 76200  3400000 -2958000 2949913 -2958000 2949913 4500000
-     200000 4500000)
+   (wire (path BOT 76200  3400000 -2958000 3400000 -2349500 2656291 -2349500
+     2656291 4500000 200000 4500000)
     (connect (terminal pin J6-4) (terminal pin J4-2))
    )
    )
    (Net GND 
    (rule
    )
-   (wire (path BOT 76200  2008000 500000 2008000 -889000 -1000000 -889000
-     -1000000 -6550000)
-    (connect (terminal pin J5-2) (terminal pin J3-0))
+   (wire (path BOT 76200  -3492000 504000 -3492000 -63500 -3238500 -63500
+     -3238500 -3444864 -3901450 -3444864 -3901450 -5495277 -3873500 -5495277
+     -3873500 -5969000 2300000 -5969000)
+    (connect (terminal pin J2-2) (terminal wire))
    )
-   (wire (path BOT 76200  -3720000 -1688000 -3937000 -1688000 -3937000 -6550000
-     -1000000 -6550000)
-    (connect (terminal pin J7-1) (terminal pin J3-0))
+   (wire (path BOT 76200  -3720000 -1688000 -3720000 -1079500 -4191000 -1079500
+     -4191000 4500000 -200000 4500000)
+    (connect (terminal pin J7-1) (terminal pin J4-0))
    )
-   (wire (path BOT 76200  -200000 4500000 -200000 2159000 444500 2159000
-     444500 635000)
-    (connect (terminal pin J4-0) (terminal wire))
+   (wire (path BOT 76200  2222500 -3175000 3873500 -3175000 3873500 4699000
+     -190500 4699000)
+    (connect (terminal wire) (terminal wire))
    )
-   (wire (path BOT 76200  -1000000 -6550000 -1000000 -6985000 3654000 -6985000
-     3654000 -6260000)
-    (connect (terminal pin J3-0) (terminal pin J6-10))
+   (wire (path BOT 76200  2222500 -3175000 2222500 -3302000)
+    (connect (terminal wire) (terminal wire))
    )
-   (wire (path BOT 76200  -3492000 504000 -3492000 -63500 -3302000 -63500
-     -3302000 -1688000 -3720000 -1688000)
-    (connect (terminal pin J2-2) (terminal pin J7-1))
+   (wire (path BOT 76200  2008000 500000 2008000 -63500 2222500 -63500
+     2222500 -3175000)
+    (connect (terminal pin J5-2) (terminal wire))
    )
-   (wire (path BOT 76200  444500 635000 844639 635000 844639 698500
-     2008000 698500 2008000 500000)
-    (connect (terminal wire) (terminal pin J5-2))
+   (wire (path BOT 76200  2008000 500000 2008000 698500 825500 698500
+     825500 250000 250000 250000)
+    (connect (terminal pin J5-2) (terminal pin J1-3))
    )
-   (wire (path BOT 76200  444500 635000 444500 444500 250000 444500
-     250000 250000)
-    (connect (terminal wire) (terminal pin J1-3))
+   (wire (path BOT 76200  2222500 -3302000 1905000 -3302000 1905000 -5750000
+     2300000 -5750000)
+    (connect (terminal wire) (terminal pin J3-0))
+   )
+   (wire (path BOT 76200  -190500 4699000 -190500 4500000 -200000 4500000)
+    (connect (terminal wire) (terminal pin J4-0))
+   )
+   (wire (path BOT 76200  2300000 -5969000 2300000 -5750000)
+    (connect (terminal wire) (terminal pin J3-0))
+   )
+   (wire (path BOT 76200  3654000 -6260000 2300000 -6260000 2300000 -5969000)
+    (connect (terminal pin J6-10) (terminal wire))
    )
    )
    (Net GPIO0 
    (rule
    )
-   (wire (path BOT 76200  -3720000 -4990000 -3720000 -4445000 -2921000 -4445000
-     -2921000 698500 -3746000 698500 -3746000 504000)
-    (connect (terminal pin J7-2) (terminal pin J2-1))
+   (wire (path BOT 76200  -3746000 504000 -3746000 698500 -2857500 698500
+     -2857500 -4990000 -3720000 -4990000)
+    (connect (terminal pin J2-1) (terminal pin J7-2))
    )
    )
    (Net GPIO1 
    (rule
    )
-   (wire (path BOT 76200  -3466000 -5244000 -3466000 -4699000 -2730500 -4699000
-     -2730500 250000 -512000 250000)
-    (connect (terminal pin J7-3) (terminal pin J1-0))
+   (wire (path BOT 76200  -512000 250000 -512000 -5244000 -3466000 -5244000)
+    (connect (terminal pin J1-0) (terminal pin J7-3))
    )
    )
    (Net GPIO3 
    (rule
    )
-   (wire (path BOT 76200  -3466000 -5498000 -1778000 -5498000 -1778000 -381000
-     -258000 -381000 -258000 250000)
-    (connect (terminal pin J7-4) (terminal pin J1-1))
+   (wire (path BOT 76200  -258000 250000 -258000 -5498000 -3466000 -5498000)
+    (connect (terminal pin J1-1) (terminal pin J7-4))
    )
    )
    (Net GPIO5 
    (rule
    )
-   (wire (path BOT 76200  -3466000 -5752000 -1587500 -5752000 -1587500 -698500
-     1754000 -698500 1754000 500000)
+   (wire (path BOT 76200  -3466000 -5752000 1754000 -5752000 1754000 500000)
     (connect (terminal pin J7-5) (terminal pin J5-1))
    )
    )
    (Net I2C_SCL 
    (rule
    )
-   (wire (path BOT 76200  3400000 -3974000 -238000 -3974000 -238000 -6550000)
-    (connect (terminal pin J6-8) (terminal pin J3-3))
+   (wire (path BOT 76200  2300000 -4988000 3400000 -4988000 3400000 -3974000)
+    (connect (terminal pin J3-3) (terminal pin J6-8))
    )
    )
    (Net I2C_SDA 
    (rule
    )
-   (wire (path BOT 76200  3400000 -3720000 -492000 -3720000 -492000 -6550000)
-    (connect (terminal pin J6-6) (terminal pin J3-2))
+   (wire (path BOT 76200  2300000 -5242000 2070750 -5242000 2070750 -4689491
+     2095500 -4689491 2095500 -3720000 3400000 -3720000)
+    (connect (terminal pin J3-2) (terminal pin J6-6))
    )
    )
   )

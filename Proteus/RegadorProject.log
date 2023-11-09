@@ -1,4 +1,4 @@
-# Writing all output to: C:\Users\Lautaro\Desktop\git\tdp1-final\proteus\RegadorProject.log
+# Writing all output to: C:\Users\Barcala\Downloads\tdp1-final-main\Proteus\RegadorProject.log
 set pad_wire_necking on
 bus diagonal
 fanout 5
